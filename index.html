@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <title>Q2-ICT10:Seatwork</title>
+        <link rel="stylesheet" href="https://pyscript.net/releases/2025.8.1/core.css" />
+        <script type="module" src="https://pyscript.net/releases/2025.8.1/core.js"></script>
+    <style>
+        .container {
+            font-family: Arial, sans-serif;
+            background-color: rgb(183, 205, 223);
+            margin: 50px;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+        }
+        label, input, button {
+            margin: 10px;
+            font-size: 15px;
+        }
+        h1 {
+            text-align: center;
+        }
+    </style>
+        <body>
+            <h1>Student Grade Calculator</h1>
+            <div id="container" class="container">
+
+                <label for="name">First Name:</label>
+                <input type="text" id="name" />
+                <label for="name">Last Name:</label>
+                <input type="text" id="name" />
+               <br>
+            <h3>Enter your grades:</h3>
+             <label for="grade">Science</label>
+                <input type="text" id="grade" />
+                <label for="grade">Math</label>
+                <input type="text" id="grade" />
+                <br>
+                 <label for="grade">English</label>
+                <input type="text" id="grade" />
+                <label for="grade">Filipino</label>
+                <input type="text" id="grade" />
+                <br>
+                 <label for="grade">ICT</label>
+                <input type="text" id="grade" />
+                 <label for="grade">P.E</label>
+                <input type="text" id="grade" />
+
+                <br><br>
+                <button id="general_weighted_average" py-click="general_weighted_average">Calculate GWA</button>
+                <button py-click="clear_fields">Clear</button>
+            </div>
+             <script type="py" src="main.py"></script>
+    </body>
+    </head>
