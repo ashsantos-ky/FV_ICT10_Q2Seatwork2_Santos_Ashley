@@ -1,7 +1,8 @@
-from pyscript import display
+from pyscript import display, document
 
-subject = ['Science', 'Math', 'English', 'Filipino', 'ICT', 'PE']
 def general_weighted_average(e):
+    first_name = document.getElementById('first_name').value
+    last_name = document.getElementById('last_name').value
 
     science = float(document.getElementById('science').value)
     math = float(document.getElementById('math').value)
@@ -9,15 +10,12 @@ def general_weighted_average(e):
     filipino = float(document.getElementById('filipino').value)
     ict = float(document.getElementById('ict').value)
     pe = float(document.getElementById('pe').value)
-
+    subject = ['Science', 'Math', 'English', 'Filipino', 'ICT', 'PE']
     units_subject = (5, 3, 2, 1)
     
     weighted_sum = (science * 5 + math * 5 + english * 5 + filipino * 3 + ict * 2 + pe * 1)
     total_units = (5 * 3) + 3 + 2 + 1
     gwa = weighted_sum / total_units
-
-    first_name = document.getElementById('first_name').value
-    last_name = document.getElementById('last_name').value
 
     summary = f"""{subject[0]}: {science:.0f}
 {subject[1]}: {math:.0f}
